@@ -1,5 +1,6 @@
 body {
   background-color: #f7f0de;
+  margin-left: 25%;
 }
 
 .navbar {
@@ -146,4 +147,6 @@ h2 {
   color: black;
   margin-top:10px;
   font-family: sans-serif;
+}
+@media only screen and (max-width: 500px) { 
 }
