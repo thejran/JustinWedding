@@ -1,6 +1,7 @@
 <html>
 <head>
   <script type="text/javascript" src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
 </head>
@@ -17,14 +18,14 @@
               <a href="">Things to do</a>
             </div>
           </li>
-          <li><a href="">Photos</a></li>
+          <li><a href="photos.html">Photos</a></li>
           <li><a href="">Registry</a></li>
           <li><a href="">RSVP</a></li>
         </ul>
       </nav>
     </div>
     <div class="main">
-      <img class="mainpic" src="https://scontent-ort2-1.xx.fbcdn.net/v/t31.0-8/14918849_10154223157763772_8362209849001248453_o.jpg?oh=bcc905e27841e1556efea094aabf4b8b&oe=593EDC3C"/>
+      <img class="mainpic" src="images/home-1.jpg"/>
       <h1>Lucy and Justin</h1>
       <h3>May 26th, 2018 ~ Penscacola Beach, FL</h3>
       <p id="demo"></p>
@@ -42,7 +43,7 @@
       <h4>Saturday, May 26, 2018</h4>
       <h4>3:00 PM</h4>
       <h4>Attire: Beach</h4>
-      <a class="rsvpbutton" href="">RSVP</a>
+      <a class="rsvpbutton">RSVP</a>
       <h3>Ceremony</h3>
       <h4>Pensacola Beach, Florida</h4>
       <h4>313 Avenida 13, Gulf Breeze, FL 32561</h4>
@@ -54,8 +55,13 @@
       <h4>Reichmann Indoor Pavilion at Stephen's Lake Park</h4>
       <h4>2300 E Walnut St, Columbia, MO 65201</h4>
       <p>While our wedding could only accomodate close family and friends, we still wanted to be able to celebrate with everyone we care about.  Join us Saturday, June 9th at 6:00 PM for drinks and BBQ!</p>  
-      <a class="rsvpbutton" href="">RSVP</a>
+      <a class="rsvpbutton">RSVP</a>
     </div>  
     </div> 
   </div>
-</html>
+</html> 
+<script>
+$('.rsvpbutton').click(function() {
+  $('.bbq').hide();
+})
+</script>
