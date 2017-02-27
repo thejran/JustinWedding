@@ -1,31 +1,47 @@
 body {
-  background-image: url("http://www.coastalrealtyexperts.com/wp-content/uploads/2014/10/feature-navarre-beach-entrance.jpg");
-  background-size: cover;
+  background-color: #f7f0de;
+}
+
+.navbar {
+  height: 50px;
+  opacity: 0.9;
+  margin: auto;
 }
 
 ul {
     list-style-type: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    top: 0;
+    width: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #f7f0de;
+}
+
+.dropcont1 {
+    display: block;
+    width: 100%;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown1:hover .dropcont1 {
+  display: block;
 }
 
 li {
     float: left;
 }
 
-#navtitle {
-  display: block;
-  color: tan;
-  text-align: center;
-  padding: 14px 16px;
-  background-color: #000
-}
-
 li a {
     display: block;
-    color: tan;
+    color: #d88b7d;
+    font-family: sans-serif; 
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -40,26 +56,32 @@ li a:hover {
 }
 
 .main {
-  border: 2px solid tan;
-  background-color: #333;
-  border-radius:20px;
+  background-color: white;
   text-align: center;
-  padding: 20px;
-  width: 48%;
-  color: tan;
-  margin-top:10px;
-  float:left;
+  padding: 0px;
+  width: 50%;
+  color: #d88b7d;
+  margin-top:0px;
+  font-family: 'Alex Brush', cursive;
+}
+
+.mainpic {
+  width: 94%;
 }
 
 h1 {
   font-size: 48px;
-  font-family: Baskerville;
+  font-family: sans-serif;
+  color: black;
 }
 
 img {
-  border: 2px solid tan;
-  border-radius: 20px;
-  height:720px;
+  border: solid 20px white;
+  width: 100%;
+}
+
+.meeting {
+  width: 80%
 }
 
 p a {
@@ -70,24 +92,58 @@ p a:hover {
   color:white;
 }
 
-.countdown {
-  border: 2px solid tan;
-  background-color: #333;
-  border-radius:20px;
-  text-align: center;
-  padding:0px 10px;
-  width: 40%;
-  color: tan;
-  margin-top:10px;
-  float:right;
-  font-size:25px;
-  box-shadow: 10px 10px 5px #111
-}
-
 #demo {
-  border: 2px solid tan;
-  border-radius: 10px;
-  font-size:30px;
-  background-color:#112
+  font-size: 20px;
+  font-family: sans-serif;
+  color: black;
 }
 
+.ourstory {
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  color: black;
+  margin-top:10px;
+  font-family: sans-serif;
+}
+
+.ringchamp {
+  width: 60%;
+}
+
+h2 {
+  text-align: center;
+  color: #d88b7d;
+  font-family: 'Alex Brush', cursive;
+  font-size: 40px;
+}
+
+.how {
+  text-align: center;
+}
+
+.ourwedding {
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  color: black;
+  margin-top:10px;
+  font-family: sans-serif;
+}
+
+.rsvpbutton {
+  border: solid 2px black;
+  border-radius: 4px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.bbq {
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  color: black;
+  margin-top:10px;
+  font-family: sans-serif;
+}
