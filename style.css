@@ -9,17 +9,19 @@ body {
 
 .navbar {
   height: 50px;
-  opacity: 0.9;
 }
 
 .navbar ul {
     list-style-type: none;
     width: 96%;
+    opacity: 0.9;
     top: 0;
     margin: auto;
     padding: 0;
     overflow: hidden;
     background-color: #f7f0de;
+    position: fixed;
+    height: 50px;
 }
 
 .navbar ul li {
@@ -29,6 +31,7 @@ body {
 
 .navbar ul li a {
     color: #d88b7d;
+    display: block;
     font-family: 'Raleway', sans-serif; 
     text-align: center;
     padding: 14px 16px;
@@ -39,11 +42,16 @@ body {
     background-color: #111;
 }
 
-.active {
-  color:white;
+.maindetail {
+  background-color: white;
+  text-align: center;
+  color: black;
+  margin-top:10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
 }
 
-.main {
+.frontpagetop {
   background-color: white;
   text-align: center;
   color: #d88b7d;
@@ -52,27 +60,8 @@ body {
   font-size: 25px;
 }
 
-.mainpic {
+.frontpagepic {
   width: 95%;
-}
-
-h1 {
-  font-size: 60px;
-  font-family: 'Raleway', sans-serif;
-  color: black;
-}
-
-img {
-  width: 96%;
-  margin: 2%;
-}
-
-p a {
-  color: tan;
-}
-
-p a:hover {
-  color:white;
 }
 
 #demo {
@@ -81,33 +70,8 @@ p a:hover {
   color: black;
 }
 
-.ourstory {
-  text-align: center;
-  background-color: white;
-  color: black;
-  margin-top:10px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 25px;
-}
-
 .ringchamp {
   width: 60%;
-}
-
-h2 {
-  text-align: center;
-  color: #d88b7d;
-  font-family: 'Alex Brush', cursive;
-  font-size: 45px;
-}
-
-.ourwedding {
-  text-align: center;
-  background-color: white;
-  color: black;
-  margin-top:10px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 25px;
 }
 
 .rsvpbutton {
@@ -116,30 +80,24 @@ h2 {
   padding: 10px;
   text-decoration: none;
   color: black;
+  background-color: #f7f0de;
 }
 
-.rsvpdeets li{
-  text-align: left;
-  width: 80%;
-  margin: auto;
+.rsvpbutton:hover {
+  background-color: #d88b7d;
 }
 
-.bbq {
-  text-align: center;
-  background-color: white;
-  color: black;
-  margin-top:10px;
+h1 {
+  font-size: 60px;
   font-family: 'Raleway', sans-serif;
-  font-size: 25px;
+  color: black;
 }
 
-.maindetail {
-  background-color: white;
+h2 {
   text-align: center;
-  color: black;
-  margin-top:0px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 24px;
+  color: #d88b7d;
+  font-family: 'Alex Brush', cursive;
+  font-size: 45px;
 }
 
 h4 {
@@ -157,28 +115,52 @@ h5 {
   font-size: 40px;
 }
 
+img {
+  width: 96%;
+  margin: 2%;
+}
+
+.rsvpdeets li{
+  text-align: left;
+  width: 80%;
+  margin: auto;
+}
+
 .photobox {
   text-align: center;
+  background-color: white;
   display: flex;
   flex-wrap: wrap;
   color: black;
   margin-top: 0px auto;
   font-family: 'Raleway', sans-serif;
   font-size: 25px;
-  float: left;
 }
 
 .pix {
-  width: 30%;
+  width: 33%;
 }
 
-.previewbox {
-  float: right;
-}
 
 @media screen and (max-width: 1000px) {
  .master {
    margin: auto;
    width: 95%;
+  }
+
+  #demo {
+    font-size: 20px;
+  }
+
+  .navbar {
+    height: 75px;
+  }
+
+  .navbar ul {
+    height: 75px;
+  }
+
+  .navbar ul li {
+   font-size: 32px;
   }
 }
